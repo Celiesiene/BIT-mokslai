@@ -1,0 +1,18 @@
+body {
+    background-image: url(https://geliustebuklai.lt/cache/images/categories/37/beautiful-pink-peony-flowers-1717449106-500x500_crop_0.jpg);
+    background-size: cover;
+
+    
+}
+span{
+    color: violet;
+}
+body{
+    text-align: center;
+    list-style: inside;
+}
+img{
+    width: 200px;
+    border-radius: 30%;
+    
+}

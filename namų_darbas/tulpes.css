@@ -1,0 +1,15 @@
+body{
+    background-image: url(https://t3.ftcdn.net/jpg/07/04/56/18/360_F_704561897_xhQblHs0aDC1imcNccgEg5zREf3sBt31.jpg);
+    background-size: cover;
+}
+span{
+    color: red;
+}
+body{
+    text-align: center;
+    list-style: inside;
+}
+img{
+    width: 200px;
+    border-radius: 30%;
+}

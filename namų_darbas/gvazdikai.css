@@ -1,0 +1,17 @@
+body{
+background-image: url(https://www.walnuts.lt/foto/augalai/gvazdikai.jpg);
+background-size: cover;
+}
+span {
+    color: orange;
+}
+body{
+    text-align: center;
+    list-style: inside;
+}
+
+img{
+    border-radius: 40%;
+    width: 200px;
+   
+}

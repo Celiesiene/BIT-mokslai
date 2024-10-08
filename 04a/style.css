@@ -1,0 +1,61 @@
+body {
+    font-family: "Oswald", sans-serif;
+    margin: 0%;
+}
+
+.title-01 {
+    color: skyblue;
+    font-size: 84px;
+    /* font size srifto dydis */
+    font-weight: 200;
+    /* 700 butu bold, font weight yra storis srifto */
+    font-family: "Oswald", sans-serif;
+}
+
+.title-02 {
+    color: crimson;
+}
+
+.box-1 {
+    border: 8px solid skyblue;
+    height: 100px;
+    width: 200px;
+    display: inline-block;
+    /* display span paverte blokiniu, tai reiskia per visa eilute */
+    /* display inline block padaro vienoje eiluteje viska 
+     */
+    box-sizing: border-box;
+    /* box sizing border box skaiciuosis kartu su borteliais  */
+    margin-left: 50px;
+    margin-right: 20px;
+    /* margin rodo atstuma iki dezutes */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* margin: 10px 20px 10px 50px; taip galima susitrumpinti virsus apacia ir sonai kad vienas surasymas butu */
+    /* margin: 30px 20px; pirmas skaicius virsus ir apacia, antras skaicius sonai. */
+    /* jeigu parasysiu margin 50px tai is visu pusiu bus 50 vienodai */
+}
+
+.center-container{
+    width: 100%;
+    
+}
+
+.container {
+    font-size: 0px;
+    width: 80%;
+    /* konteinerio width kiek ekrane vietos uzima */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.box-2 {
+    border: 8px solid crimson;
+    height: 100px;
+    width: 33.3333%;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 30px;
+    /* font size butinas kad matytusi div esancios raides a b c  */
+
+}

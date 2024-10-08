@@ -1,0 +1,44 @@
+.container {
+    width: 100%;
+}
+
+
+.column {
+width: 30%;
+float: left;
+margin: 1.5% ;
+}
+
+.image {
+    width: 100%;
+ border: 2px solid black;
+
+}
+
+.card {
+
+    border: 1px solid black;
+    /* galima rinktis solid arba black arba dar kazkoki, px rodo stori */
+    margin-bottom: 20px;
+    padding: 20px;
+    /* padding is vidaus praplecia, atitraukia nuo sieneliu */
+    border-radius: 5px;
+    border-style: dotted;
+}
+.price {
+    text-align: center;
+    text-decoration-line: underline;
+   
+}
+
+.nuoroda{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
+.column .card .price{
+    color: green;
+}
+h2 {
+    text-align: center;
+}

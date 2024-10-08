@@ -1,0 +1,47 @@
+
+
+body{
+    margin: 0%;
+    background-image: url(https://img.freepik.com/free-vector/watercolor-abstract-floral-background_52683-134424.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1728259200&semt=ais_hybrid);
+    background-size: cover;
+}
+    header{
+        text-align: center;
+    }
+    
+    .list{
+        text-align: center;
+       list-style: inside;
+        
+    }
+h1{
+    font-family: cursive;
+    font-weight: 900;
+    text-align: center;
+}
+    .main-container{
+        width: 100%;
+    
+    }
+    .container{
+        width: 100%;
+        
+    }  
+
+    .box{
+        background-image: url(https://img.freepik.com/premium-photo/floral-background-with-fresh-flowers_961875-321429.jpg);
+        height: 150px;
+        width: 19%;
+        display: inline-block;
+        box-sizing: border-box;
+        font-size: 18px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        border-radius: 30px;
+        border: solid black;
+    
+    }
+    nav{
+        text-align: center;
+    }

@@ -1,0 +1,37 @@
+H1 {
+    text-align: center;
+    background-color: aquamarine;
+    color: blue;
+  
+}
+
+.container {
+    width: 100%;
+}
+.stulpelis{
+    width: 30%;
+float: left;
+text-align: center;
+margin-bottom: 2%;
+padding: 2%;
+
+}
+p {
+    color: blue;
+}
+
+.foto {
+    height: 100px;
+border-radius: 30%;
+
+}
+.antraštė {
+    text-align: center;
+    color: #f7009c;
+}
+.sostinės {
+    border: 1 solid red;
+    padding: 2%;
+    border-style: dotted;
+    margin: 5%;
+}
