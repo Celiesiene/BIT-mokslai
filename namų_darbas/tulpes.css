@@ -13,3 +13,12 @@ img{
     width: 200px;
     border-radius: 30%;
 }
+a{
+    font-family: fantasy;
+    transition: 1s;
+    color: blueviolet;
+
+}
+a:hover{
+    color:crimson;
+}

@@ -1,0 +1,50 @@
+:root {
+    --container-width: 1200px;
+    --transition: 1s;
+    --red-collor: red;
+}
+
+body {
+    margin: 0;
+    font-family: fantasy;
+}
+
+header {
+    background-image: url(https://cdn.pixabay.com/photo/2022/02/18/14/15/basketball-background-7020782_960_720.png);
+    background-size: 100px;
+    background-size: cover;
+    padding: 30px 20px;
+
+}
+
+header nav {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 20px 0 100px;
+
+}
+
+header nav svg {
+    width: 60px;
+    fill: white;
+    stroke: white;
+    position: absolute;
+    top:-2px;
+    left: -10px;
+
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 30px;
+    transition: var(--transition);
+
+}
+
+header nav a:hover {
+    color: var(--red-collor);
+}

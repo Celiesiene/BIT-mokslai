@@ -1,6 +1,6 @@
 :root{
     --blue: #1e90ff;
-    --container-width: 1200px; 
+    --container-width: 800px; 
     /* kai reikia visam kode pazymeti kazka kad viskas keistusi visam kode. du bruksneliai ir irasyt, spalva cia rasem ir puslapio dydi. Pasikartojantys dalykai keisis visam kode. */
     --trans: all 0.4s;
     --rabit-color: orange;
@@ -22,8 +22,11 @@ header{
     /* nurodom prie max width var ir i var vidu irasom tai kas vienodai daugelyje kodo vietu. var kartu susijungia su tuo virsuje su bruksniukais */
     margin: 0 auto;
     position: relative;
+    /* realitive position reikia pasizymeti, kai i to vidu dedam logo arba foto. kad zinoti nuo kur stumdymus logo/foto daryti reikes
+     */
     box-sizing: border-box;
     padding:0 20px 0 100px;
+
  }
     
     header nav svg {
@@ -32,6 +35,7 @@ header{
         /* widht logo dydis, fill - fonas logo */
         /* su fill visa logo spalvinam, su stroke spalvinam krastines */
         position: absolute;
+        /* absoliuti pozicija neturi ismatavimu. nedaro jokios itakos konteineriui kuriame yra  */
         top: -28px;
         left: -20px;
     }
@@ -50,4 +54,86 @@ header nav a {
 header nav a:hover{
     color: var(--rabit-color);
     /* hover padaro, kaip pasikeicia elementas kai ant jo uzeina pelyte */
+}
+
+.hero{
+    width:100%;
+    height: calc(100vh - 104.5px);
+    /* 100vh yra visas puslapis, minus header padarem, kad nesiskrolintu puslapis */
+    position: relative;
+    font-size: 0;
+}
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation-name: forest;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: scale(1);
+    filter: brightness(1);
+}
+@keyframes forest {
+    0% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+    93% {
+        filter: brightness(1);
+    }
+    99% {
+        transform: scale(2);
+        filter: brightness(0.05);
+    }
+    99.5% {
+        transform: scale(1);
+        filter: brightness(0.05);
+    }
+    100% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+}
+
+
+.hero-text {
+    width: 100%;
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+}
+
+.hero-text-holder {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hero-text-bg {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 50px;
+    border-radius: 40px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+ 
+.hero-text h1 {
+    font-size: 60px;
+    color: var(--blue);
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 20px;
+}
+ 
+.hero-text p {
+    font-weight: 200;
+    font-size: 20px;
+    color: white;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 20px;
+    
 }

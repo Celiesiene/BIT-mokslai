@@ -17,6 +17,16 @@ list-style: inside;
 img{
     width: 200px;
     border-radius: 30%;
+    
+}
+.navigation{
+    font-family: fantasy;
+    transition: 1s;
+    color: blueviolet;
+
+}
+.navigation:hover{
+    color:crimson;
 }
 
 

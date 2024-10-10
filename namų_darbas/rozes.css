@@ -11,3 +11,15 @@ body{
 img{
     width: 200px;
 }
+a{
+    font-family: fantasy;
+    transition: 1s;
+    color: blueviolet;
+
+}
+a:hover{
+    color:crimson;
+}
+.rose{
+    width: 100px;
+}
