@@ -1,10 +1,13 @@
 :root{
     --blue: #1e90ff;
-    --container-width: 800px; 
+    --container-width: 1200px; 
     /* kai reikia visam kode pazymeti kazka kad viskas keistusi visam kode. du bruksneliai ir irasyt, spalva cia rasem ir puslapio dydi. Pasikartojantys dalykai keisis visam kode. */
     --trans: all 0.4s;
     --rabit-color: orange;
-    
+
+}
+*{
+    box-sizing: border-box;
 }
 
 body{
@@ -62,6 +65,7 @@ header nav a:hover{
     /* 100vh yra visas puslapis, minus header padarem, kad nesiskrolintu puslapis */
     position: relative;
     font-size: 0;
+    overflow: hidden;
 }
 .hero img {
     width: 100%;
@@ -136,4 +140,53 @@ header nav a:hover{
     margin: 0 auto;
     padding: 20px;
     
+}
+.stats{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+.stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify contet ligiuojasi ir align items irgi lygiuojasi. stulpeliuose justify lygiuojasi, align - ailuteje */
+    border-top: 1px solid gray;
+    border-bottom:  1px solid grey;
+    padding: 20px;
+    width: 100%;
+    max-width: 280px;
+    min-width: 230px;
+}
+.stats-bin{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    max-width: var(--container-width);
+    display: flex;
+    padding: 0 30px;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 30px;
+    /* column gap tarpas tarp stulpeliu, kad isiktu mazejant ekranui */
+    flex-wrap: wrap;
+    /* flext wrap reikalingas tam kad nusoktu i apatine eilute mazejant ekranui */
+    row-gap: 50px;
+}
+
+.stats h4{
+    font-size: 60px;
+    color: var(--blue);
+    margin: 0;
+}
+.stats p{
+    font-size: 20px;
+    color: grey;
+    margin: 0;
+    text-align: center;
+}
+.box-content-left svg{
+    width: 100px;
+    height: 100px;
 }

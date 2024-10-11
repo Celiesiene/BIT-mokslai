@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+header nav{
+    background-color: lightsalmon;
+    margin: 0;
+    padding: 10px;
+}
+svg{
+    width: 100px;
+}
+.info{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+}
+
+a{
+    text-decoration: none;
+    margin-left: 20px;
+
+}
+h1{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+body{
+    background-image: url(https://t4.ftcdn.net/jpg/05/53/50/53/360_F_553505393_Q4l9rPpxCqF3QB4pbaf5Tqc7HhkHT5Hk.jpg);
+    background-size: cover;
+    
+
+}
+.list{
+    font-size: 30px;
+    font-style: italic;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
