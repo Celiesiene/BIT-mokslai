@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightviliot: #9A54BC;
+    --midViliot:#60267F;
+    --darkViolet: #2B0236;
+}
+
+body {
+    font-family: Roboto;
+}
+h2{
+    font-size: 36px;
+}
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.purpleLine {
+    width: 100%;
+    height: 20px;
+    background-color: var(--darkViolet);
+    color: white;
+    font-size: 12px;
+
+}
+
+.purpleLine a {
+    color: white;
+}
+
+.mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-bottom: rgba(220, 220, 220, 0.202) 3px solid;
+}
+
+.navigationContainer {
+    gap: 20px;
+}
+
+.navigationContainer nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navigationContainer nav ul li {
+    list-style: none;
+    font-size: 14px;
+}
+
+.navigationContainer nav ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #2B0236;
+
+}
+
+.navigationContainer nav ul li a:hover {
+    color: #ff1b1b;
+}
+
+.headerBtn {
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 0.88px solid #9A54BC;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #9A54BC;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.headerBtn:hover {
+    background-color: #9A54BC;
+    color: white;
+}
+
+.sectionOneContainer {
+    padding: 50px 40px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sectionOneText {
+    font-size: 36px;
+    text-align: center;
+    color: #2B0236;
+}
+
+.sectionOneBtn {
+    padding: 20px 30px;
+    background-color: var(--lightviliot);
+    border-radius: 5px;
+    color: white;
+    border: var(--lightviliot)1px solid;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 4.4px 8.8px 0px #0000001A;
+
+}
+
+.sectionOneBtn:hover {
+    background-color: white;
+    color: var(--lightviliot);
+}
+
+.sectionTwoEllipseContainer {
+    position: relative;
+    margin-top: 200px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.smallElipse {
+    top: -170px;
+}
+
+.rectangle {
+    top: -160px;
+}
+
+.elipseLogo {
+    top: -50px;
+}
+
+.elipseBtn {
+    padding: 7px 12px;
+    background-color: white;
+    color: var(--midViliot);
+    border: 2px solid var(--lightviliot);
+    border-radius: 3px;
+    font-size: 12px;
+    top: 130px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.elipseBtn:hover {
+    color: white;
+    background-color: var(--midViliot);
+}
+.iconsContainer{
+    width: 100%;
+   margin-top: 300px;
+   flex-direction: column;
+   gap: 50px;
+}
+iconsContainer h2{
+    font-size: 36px;
+}
+.icons{
+   width: 80%; 
+   justify-content: space-evenly;
+}
+ .icons img{
+    width: 100px;
+ }
+.howDoesCollabHelpContainer{
+    margin-top: 150px;
+    flex-direction: column;
+    gap: 50px;
+}
+.textAndImgContainer{
+    width: 75%;
+    /* background-color: violet; */
+    height: 400px;
+}
+.textContainer{
+    width: 50%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 100%;
+}
+.ancorContainer{
+    width: 100%;
+    height: 50px;
+    justify-content: space-around;
+    box-shadow: 0px 3.96px 5.28px 0px #00000017;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.ancorContainer a{
+    text-decoration: none;
+    width: 50%;
+    /* background-color: var(--midViliot); */
+    text-align: center;
+    padding: 10px 0;
+    /* border: 2px solid var(--lightviliot); */
+    border-radius: 5px;
+    
+}
+
+.ancorContainer a:hover{
+background-color: var(--midViliot);
+border: 2px solid var(--lightviliot);
+color: white;
+}
+
+.paraContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.textContainerParagrath{
+    background-color:#F2F2F2;
+    width: 80%;
+    padding: 30px 10px;
+}
+.textContainerParagrath span{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.imgContainer{
+    width: 50%;
+}
+.imgContainer img{
+  width: 320px;
+  margin-top: 220px;
+}
