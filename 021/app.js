@@ -40,9 +40,12 @@ class TV {
     static pridetiPrograma(programa){
         this.programos.push(programa); 
     }
-    static zinute;
+    static zinute = 'niekas dar nieko niekam nesake'
+static pats = this;
+
+
     static rasytiZinute(zinute){
-        this.zinute = zinute;
+        this.pats.zinute = zinute;
     }
 
     constructor(savininkas) {
@@ -61,7 +64,7 @@ class TV {
         this.constructor.rasytiZinute(zinute)
     }
     skaitytiZinute(){
-        console.log(this.constructor.zinute);
+        console.log(this.constructor.pats.zinute);
         
     }
 
@@ -130,7 +133,7 @@ tv3.pakeistiKanala(4);
 tv3.info();
 tv3.skaitytiZinute()
 
-const tv4 = new TVsony('Jonas');
+const tv4 = new TVsamsung('Jonas');
 
 // tv4.programos = naujosProgramos;
 
