@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<div>
+    <div class="invoice-container"></div>
+    <div class="header">
+        <h1>Sąskaita faktūra</h1>
+        <p class="invoiceNumber">Sąskaitos numeris:</p>
+        <p class="date">Data:</p>
+    </div>
+    <div class="bothDetails">
+        <div class="buyerDetails">
+            <h3>Buyer:</h3>
+        </div>
+        <div class="sellerDetails">
+            <h3>Seller:</h3>
+        </div>
+    </div>
+    <div class="items">
+        <h2>Prekių / Paslaugų sąrašas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Prekė / Paslauga</th>
+                    <th>Kiekis</th>
+                    <th>Kaina (EUR)</th>
+                    <th>Suma (EUR)</th>
+                </tr>
+            </thead>
+           
+        </table>
+    </div>
+    <div class="total">
+        <h2>Bendra suma</h2>
+        <table>
+            <tr>
+                <td>Bendra suma (be PVM):</td>
+                <td> EUR</td>
+            </tr>
+            <tr>
+                <td>PVM (21%):</td>
+                <td> EUR</td>
+            </tr>
+            <tr>
+                <td>Iš viso:</td>
+                <td> EUR</td>
+            </tr>
+        </table>
+    </div>
+    <div class="dueDate">
+        <p>Apmokėti iki:</p>
+    </div>
+
+</div>
+</body>
+
+</html>

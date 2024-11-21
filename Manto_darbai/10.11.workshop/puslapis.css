@@ -6,17 +6,19 @@
 
 :root {
     --lightviliot: #9A54BC;
-    --midViliot:#60267F;
+    --midViliot: #60267F;
     --darkViolet: #2B0236;
 }
 
 body {
     font-family: Roboto;
 }
-h2{
+
+h2 {
     font-size: 36px;
 }
-.flexCenter{
+
+.flexCenter {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,33 +157,40 @@ h2{
     color: white;
     background-color: var(--midViliot);
 }
-.iconsContainer{
+
+.iconsContainer {
     width: 100%;
-   margin-top: 300px;
-   flex-direction: column;
-   gap: 50px;
+    margin-top: 300px;
+    flex-direction: column;
+    gap: 50px;
 }
-iconsContainer h2{
+
+iconsContainer h2 {
     font-size: 36px;
 }
-.icons{
-   width: 80%; 
-   justify-content: space-evenly;
+
+.icons {
+    width: 80%;
+    justify-content: space-evenly;
 }
- .icons img{
+
+.icons img {
     width: 100px;
- }
-.howDoesCollabHelpContainer{
+}
+
+.howDoesCollabHelpContainer {
     margin-top: 150px;
     flex-direction: column;
     gap: 50px;
 }
-.textAndImgContainer{
+
+.textAndImgContainer {
     width: 75%;
     /* background-color: violet; */
     height: 400px;
 }
-.textContainer{
+
+.textContainer {
     width: 50%;
     /* background-color: aquamarine; */
     display: flex;
@@ -189,7 +198,8 @@ iconsContainer h2{
     gap: 50px;
     height: 100%;
 }
-.ancorContainer{
+
+.ancorContainer {
     width: 100%;
     height: 50px;
     justify-content: space-around;
@@ -198,7 +208,8 @@ iconsContainer h2{
     padding: 5px;
     border-radius: 5px;
 }
-.ancorContainer a{
+
+.ancorContainer a {
     text-decoration: none;
     width: 50%;
     /* background-color: var(--midViliot); */
@@ -206,13 +217,13 @@ iconsContainer h2{
     padding: 10px 0;
     /* border: 2px solid var(--lightviliot); */
     border-radius: 5px;
-    
+
 }
 
-.ancorContainer a:hover{
-background-color: var(--midViliot);
-border: 2px solid var(--lightviliot);
-color: white;
+.ancorContainer a:hover {
+    background-color: var(--midViliot);
+    border: 2px solid var(--lightviliot);
+    color: white;
 }
 
 .paraContainer {
@@ -220,20 +231,322 @@ color: white;
     align-items: center;
     gap: 10px;
 }
-.textContainerParagrath{
-    background-color:#F2F2F2;
+
+.textContainerParagrath {
+    background-color: #F2F2F2;
     width: 80%;
     padding: 30px 10px;
 }
-.textContainerParagrath span{
+
+.textContainerParagrath span {
     font-size: 14px;
     font-weight: 500;
 }
 
-.imgContainer{
+.imgContainer {
     width: 50%;
 }
-.imgContainer img{
-  width: 320px;
-  margin-top: 220px;
+
+.imgContainer img {
+    width: 320px;
+    margin-top: 220px;
+}
+
+.fastestSafestContainer {
+    flex-direction: column;
+    margin-top: 350px;
+    gap: 40px;
+    width: 100%;
+}
+
+.fastestSafestContainer p {
+    width: 60%;
+    text-align: center;
+}
+
+.collabProjectDoneContainer {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.projectDoneContainer {
+    gap: 120px;
+}
+
+.card {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+    font-weight: 500;
+}
+
+.card img {
+    width: 300px;
+}
+
+.card span {
+    color: var(--midViliot);
+    padding: 0 20px;
+}
+
+.card p {
+    padding: 0 20px;
+}
+
+.readyToStartContainer {
+    flex-direction: column;
+    margin-top: 250px;
+
+}
+
+.readyToStartContainerpara {
+    margin-top: 20px;
+    color: #A79D9D;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.monthlyContainer {
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.monthly {
+    font-size: 14px;
+    color: #A79D9D;
+}
+
+.yearly {
+    color: #2B0236;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.monthlyContainer span {
+    font-size: 10px;
+    background-color: #FFE87A;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.bigCardsContainer {
+    margin-top: 100px;
+    gap: 30px;
+    width: 100%;
+}
+
+.bigCard {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 17%;
+    border: 1px solid grey;
+    height: 420px;
+    padding: 30px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.bigCard p{
+font-weight: 500;
+}
+.bigCard button {
+background-color: white;
+padding: 15px 20px;
+color: var(--darkViolet);
+border: 3px solid var(--darkViolet);
+font-weight: 700;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+}
+.bigCard ul li {
+    margin-top: 5px;
+    padding-left: 10px;
+}
+.bigCard ul li::marker {
+    content: "▶";
+   
+}
+.bigCard:hover{
+    background-color: #56E6A5;
+    cursor:grab;
+
+}
+.bigCardsContainer .bigCard .bigCardLastPara{
+    font-size: 12px;
+    font-weight: 200;
+}
+.bigCard button:hover{
+background-color: var(--midViliot);
+color: white;
+}
+.starsContainer {
+    flex-direction: column;
+    margin-top: 150px;
+}
+.arrowsAndText{
+    width: 900px;
+    margin-top: 50px;
+    gap: 80px;
+}
+arrowsAndText p{
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+
+
+
+.joinUs{
+    flex-direction: column;
+    margin-top: 100px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.joinUsText{
+    flex-direction: column;
+    margin: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.joinUsText p{
+width: 850px;
+text-align: center;
+font-weight: 200;
+margin-top: 30px;
+}
+.joinUsButton button{
+    background-color: var(--lightviliot);
+    padding: 15px;
+    color: white;
+    border: 1 solid var(--lightviliot);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.joinUsButton button:hover{
+background-color: white;
+color: var(--lightviliot);
+border: 2px solid var(--lightviliot);
+}
+.facesContainer{
+    width: 100%;
+}
+   
+.backgroundImg{
+flex-wrap: wrap;
+}
+
+.backgroundImg img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+   
+}
+.nuotraukos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nuotraukos img{
+width: 100px;
+}
+.nuotraukos .imgFaces1 {
+  top: -290px;
+  left: -30px;
+}
+.nuotraukos .imgFaces2{
+    bottom: 130px;
+}
+.nuotraukos .imgFaces3{
+bottom: 160px;
+left: 80px;
+} 
+.nuotraukos .imgFaces4{
+    bottom: 90px;
+    left: 120px;
+}
+.nuotraukos .imgFaces5{
+    left: 190px;
+    bottom: 70px;
+}
+.nuotraukos .imgFaces6{
+    left: 290px;
+    bottom: 90px;
+}
+.nuotraukos .imgFaces7{
+    left: 380px;
+    bottom: 90px;
+} 
+.nuotraukos .imgFaces8{
+left: 340px;
+bottom: 180px;
+}
+.nuotraukos p{
+position: absolute;
+right: 270px;
+font-size: 15px;
+bottom: -3720px;
+color: var(--lightviliot);
+
+}
+
+.downloadTheCollab {
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    background-color: var(--lightviliot);
+    color: white;
+}
+.threeBtns{
+margin-top: 40px;
+display: flex;
+
+
+}
+.threeBtns button{
+padding: 10px 20px;
+margin: 15px;
+border: 2px solid white;
+background-color: var(--lightviliot);
+color: white;
+border-radius: 5px;
+cursor: pointer;
+transition: all  0.2s ease-in-out;
+}
+.threeBtns button:hover{
+background-color: white;
+color: var(--lightviliot);
+border: 2px solid var(--darkViolet);
+
+}
+.mapContainer {
+    width: 100%;
+    gap: 100px;
+    background-color: (226, 189, 242, 0.11);
+}
+
+.haveQuestion {
+    flex-direction: column;
+}
+
+.haveQuestion h2 {
+    font-size: 30px;
+    padding: 40px;
+}
+
+.haveQuestion p {
+    padding: 20px;
+    font-weight: 700;
+}
+
+
+.googleMap iframe {
+    width: 800px;
+    height: 450px;
+    
 }

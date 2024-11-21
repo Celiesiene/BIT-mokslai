@@ -1,0 +1,35 @@
+.ketvirtaUzduotis{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    div{
+        margin-right: 10px;
+    }
+}
+
+
+.penktaUzduotis{
+    display: flex;
+    flex-wrap: wrap;
+    div{
+        margin-right: 10px;
+    }
+}
+
+.sestaUzduotis{
+    display: flex;
+    flex-wrap: wrap;
+    div{
+        text-align: center;
+        margin-right: 10px;
+    }
+}
+
+.septintaUzduotis{
+    // display: flex;
+    // flex-wrap: wrap;
+    span{
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+}

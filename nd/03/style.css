@@ -1,0 +1,62 @@
+#pirmaUzduotis {
+    display: flex;
+    gap: 20px;
+}
+#antraUzduotis{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#treciaUzduotis{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+ 
+}
+#treciaUzduotis div{
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+}
+#ketvirtaUzduotis{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+ 
+}
+#ketvirtaUzduotis div{
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+}
+
+#sestaUzduotis{
+    display: flex;
+}
+
+#astuntaUzduotis{
+    line-height: 1px;
+    font-size: 17px;
+}
+#astuntaUzduotis span{
+    width: 10px;
+    height: 10px;
+    color: green;
+    display: inline-block;
+}
+
+#devintaUzduotis{
+    line-height: 1px;
+    font-size:  17px;
+
+}
+#devintaUzduotis span{
+    width: 10px;
+    height: 10px;
+    color: green;
+    display: inline-block;
+}

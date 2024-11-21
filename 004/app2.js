@@ -26,11 +26,6 @@ if (i == 5 || i == 7) {
 }
 }
 
-
-
-
-
-
 // const html2 = `<div></div>`; vietoj jo atsirado bulve
 bulve = bulve + morka;
 s2.innerHTML = bulve
