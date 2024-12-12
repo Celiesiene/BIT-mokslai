@@ -12,19 +12,12 @@ console.log('nu bandom');
 
 
 
-const section = document.querySelector('.header')
+
 
 fetch('https://in3.dev/inv/')
       .then(response => response.json())
       .then(json => {
         console.log(json)
-
-
-        json.forEach(element => {
-          const p = document.createElement('p');
-          p.innerText = element.number;
-          section.appendChild(p);
-      })
 
 
       })

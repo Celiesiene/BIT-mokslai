@@ -150,3 +150,128 @@ cart.add('Pienas');
 cart2.add('Medus')
 
 console.log(cart, cart2);
+
+
+// Sukurti klasę Stikline. Sukurti savybes turis ir kiekis. Turis turi būti pasirenkamas objekto kūrimo metu. Parašyti metodą ipilti(kiekis), kuris keistų savybę kiekis. Jeigu stiklinės tūris yra mažesnis nei pilamas kiekis- kiekis netelpa ir būna lygus tūriui. Parašyti metodą ispilti(), kuris grąžiną kiekį. Pilant išpilamas visas kiekis, tas kas netelpa, nuteka per stalo viršų.  Sukurti metodą stiklinejeYra(), kuris į konsolę atspausdintų kiek stiklinėje yra skysčio. Sukurti tris stiklinės objektus su tūriais: 200, 150, 100. Didžiausią pripilti pilną ir tada ją ispilti į mažesnę stiklinę, o mažesnę į dar mažesnę.
+
+
+class Stikline {
+    constructor(turis) {
+        this.kiekis = 0;
+        this.turis = turis;
+    }
+    ipilti(kiekis) {
+        this.kiekis = Math.min(this.turis, this.kiekis + kiekis);
+        return this;
+    }
+    ispilti() {
+        const kiekis = this.kiekis;
+        this.kiekis = 0;
+        return kiekis;
+    }
+    stiklinejeYra() {
+        console.log(`Stiklinėje, kurios tūris yra ${this.turis} yra ${this.kiekis} skysčio`);
+
+    }
+}
+
+const stikline100 = new Stikline(100);
+const stikline150 = new Stikline(150);
+const stikline200 = new Stikline(200);
+
+
+
+
+stikline100.ipilti(stikline150.ipilti(stikline200.ipilti(500).ispilti()).ispilti());
+stikline100.stiklinejeYra()
+stikline150.stiklinejeYra()
+stikline200.stiklinejeYra()
+
+
+// Sukurti klasę Grybas. Sukurti klasę Krepsys. Krepsys, kuri turi savybę dydis,kuriai konstruktoriuje yra priskiriama reikšmė 500 ir savybę prikrauta (kuri pradžioje lygi 0). Grybas turi tris savybes, kurios taip pat yra paskaičiuojamos konstruktoriuje: valgomas, sukirmijes, svoris. Kuriant Grybo objektą jo savybės turi būti atsitiktinai (rand funkcija) priskiriamos taip: valgomas- true arba false, sukirmijes- true arba false ir svoris- nuo 5 iki 45. Eiti grybauti, t.y. Kurti naujus Grybas objektus, jeigu nesukirmijęs ir valgomas dėti į Krepsi objektą, t.y. Vykdyti deti(grybas) metodą kol bus pririnktas pilnas krepšys nesukirmijusių ir valgomų grybų (gali būti truputį daugiau nei dydis).
+
+class Grybas {
+    constructor() {
+        this.svoris = this.#rand(5, 45)
+        this.valgomas = !this.#rand(0, 1)
+        this.sukirmijes = !this.#rand(0, 1)
+    }
+    #rand(min, max) {
+        const minCeiled = Math.ceil(min);
+        const maxFloored = Math.floor(max);
+        return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
+    }
+
+}
+
+class Krepsys {
+
+    constructor() {
+        this.prideta = 0;
+        this.dydis = 500;
+    }
+    deti(grybas) {
+        if (grybas.valgomas && !grybas.sukirmijes) {
+            this.prideta += grybas.svoris;
+        }
+        return 500 > this.prideta;
+    }
+}
+
+const krepsys = new Krepsys();
+do { } while (krepsys.deti(new Grybas())) { }
+console.log(krepsys);
+
+console.log('.............kitas......');
+
+
+
+const manoMap = new Map();
+ 
+manoMap.set('vardas', 'Jonas'); // key, value
+manoMap.set('pavarde', 'Jonaitis');
+manoMap.set('amzius', 99);
+manoMap.set({a: 1}, 'Petras');
+manoMap.set('vardas', 'Jolanta');
+manoMap.set({a: 1}, 'Antanas');
+manoMap.set(function(){return 2}, 'Jonas')
+manoMap.set([1, 2, 3], 'Jonas')
+manoMap.delete('vardas')
+
+console.log(manoMap.size);
+
+ 
+console.log(manoMap);
+console.log(manoMap.get('vardas'));
+console.log(manoMap.get({a: 1}));
+
+
+ 
+const objektas = {
+    vardas: 'Jonas',
+    pavarde: 'Jonaitis',
+    amzius: 99
+};
+ 
+console.log(objektas);
+ 
+manoMap.forEach((value, key) => {
+    console.log(key, value);
+    
+});
+
+console.log('.......setas....');
+
+const manoSetas = new Set()
+
+manoSetas.add('Jonas')
+manoSetas.add('Jonas')
+manoSetas.add('Petras')
+manoSetas.add('Antanas')
+
+console.log(manoSetas);
+
+console.log(manoSetas.has('Jonas'));
+manoSetas.delete('Jonas')
+console.log(manoSetas.has('Jonas'));
+

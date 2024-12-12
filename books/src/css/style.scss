@@ -1,0 +1,28 @@
+@import '~bootstrap/scss/bootstrap';
+@import 'list';
+
+body{
+    background-color: #c1c1cc;
+
+    
+}
+
+nav{
+    background-color: pink;
+}
+.big{
+    font-size: 100px;
+    margin-top: 300px;
+    color: crimson;
+}
+.mid{
+    font-size: 40px;
+}
+.card-body form.sort {
+    display: flex;
+    gap: 10px;
+    margin: 0 0 40px 0;
+    select{
+        width: 300px;
+    }
+}

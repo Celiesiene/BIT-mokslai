@@ -1,0 +1,75 @@
+
+        <!DOCTYPE html>
+        <html lang="lt">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <script src="app.js"defer></script>
+            <title>PVM Sąskaita Faktūra</title>
+            
+        </head>
+        <body>
+            <body>
+                <div class="invoice-container">
+                    <div class="header">
+                        <img class="beaver" src="./1553172103.svg" alt="bebras">
+                        <h1>PVM SĄSKAITA FAKTŪRA</h1>
+                        <p style="border-bottom: 2px solid black;">Sąskaitos numeris: <span id="invoice-number"></span></p>
+                        <p><b>Data:</b> <span id="invoice-date"></span></p>
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h3>Pardavėjas:</h3>
+                            <p id="seller-details"></p>
+                        </div>
+                        <div>
+                            <h3>Pirkėjas:</h3>
+                            <p id="buyer-details"></p>
+                        </div>
+                    </div>
+                   
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Prekė</th>
+                                <th>Kiekis</th>
+                                <th class="vnt">Vieneto kaina</th>
+                                <th class="vnt">Kaina</th>
+                                <th>Nuolaida</th>
+                                <th class="vnt">Kaina su nuolaida</th>
+                            </tr>
+                        </thead>
+                        <tbody id="items-table"></tbody>
+                            <tfoot>
+                            
+                                <tr>
+                                    <td colspan="4" style="text-align: right;"><b>Transportavimas:</b></td>
+                                    <td id="shipping-cost"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" style="text-align: right;"><b>Tarpinė suma:</b></td>
+                                    <td id="subtotal"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" style="text-align: right;"><b>PVM (21%):</b></td>
+                                    <td id="vat"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" style="text-align: right;"><b>Galutinė suma:</b></td>
+                                    <td id="total"></td>
+                                </tr>
+                            </tfoot>
+                    
+                        
+                    </table>
+
+                    <p> <b>Apmokėti iki:</b> <span id="due-date"></span></p>
+                    
+               
+                </div>
+            </body>
+        </body>
+        </html>
+        
+

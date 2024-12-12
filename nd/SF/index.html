@@ -28,14 +28,31 @@
         <table>
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>Prekė / Paslauga</th>
+                    <th>Prekė</th>
                     <th>Kiekis</th>
-                    <th>Kaina (EUR)</th>
-                    <th>Suma (EUR)</th>
+                    <th>Kaina</th>
+                    <th>Nuolaida</th>
+                    <th>Viso</th>
+            
+            <tbody id="items-table"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" style="text-align: right;">Transportavimas:</td>
+                    <td id="shipping-cost"></td>
                 </tr>
-            </thead>
-           
+                <tr>
+                    <td colspan="4" style="text-align: right;">Tarpinė suma:</td>
+                    <td id="subtotal"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="text-align: right;">PVM (21%):</td>
+                    <td id="vat"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="text-align: right;">Galutinė suma:</td>
+                    <td id="total"></td>
+                </tr>
+            </tfoot>
         </table>
     </div>
     <div class="total">

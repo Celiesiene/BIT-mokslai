@@ -1,0 +1,65 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+}
+.beaver{
+    width: 80px;
+}
+.invoice-container {
+    width: 950px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.header, .footer {
+    text-align: center;
+   
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.details div {
+    width: 40%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table th, table td {
+    /* border: 1px solid #ddd; */
+    padding: 8px;
+    text-align: left;
+   
+   
+}
+table th {
+    background-color: rgba(176, 105, 46, 0.399);
+    
+}
+
+.vnt{
+    width: 130px;
+    
+}
+.anotherBeaver{
+    width: 50px;
+}
+
+/* .print-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+.print-btn:hover {
+    background-color: #0056b3;
+} */
