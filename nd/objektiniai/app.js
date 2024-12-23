@@ -344,3 +344,6 @@ stikline3.stiklinejeYra(); // Patikriname, kiek mažiausioje stiklinėje
 
 
 
+
+
+
