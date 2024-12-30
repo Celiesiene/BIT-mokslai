@@ -53,6 +53,7 @@ position: absolute;
     position: absolute;
     opacity: 0;
     transition: opacity 0.6s ease;
+    width: 100cqw;
 }
 .active{
     opacity: 1;
@@ -94,6 +95,7 @@ position: absolute;
     margin: 0 15px;
     display: inline-block;
     cursor: pointer;
+    opacity: 0.3;
 
 }
 .prev{
@@ -101,11 +103,16 @@ position: absolute;
     margin-right: 90px;
     cursor: pointer;
     margin-bottom: 4px;
+    opacity: 0.3;
 }
 .next{
     margin-left: 90px;
     cursor: pointer;
     margin-top: 4px;
+    opacity: 0.3;
+}
+.prev:hover, .next:hover{
+    opacity: 1;
 }
 
 .card img{
@@ -114,4 +121,5 @@ position: absolute;
 
 .slider{
     position: relative;
+    container-type: inline-size;
 }
