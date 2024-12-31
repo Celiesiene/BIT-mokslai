@@ -3,7 +3,7 @@
     width: 100%;
     column-gap: 20px;
  
-    section#read {
+    section#read, section#clients, section#phones, section#full{
         border: 1px solid skyblue;
         padding: 10px;
  
@@ -29,6 +29,7 @@
  
                 span.tree-name {
                     width: 120px;
+                    
                 }
  
                 span.tree-height {
@@ -43,7 +44,7 @@
             }
         }
     }
-    section#create, section#delete, section#edit{
+    section#create, section#delete, section#edit, section#clients {
         border: 1px solid darkgoldenrod;
         padding: 10px;
         & > div{
@@ -63,6 +64,11 @@
                 color: white;
                 border: none;
                 cursor: pointer;
+                &:hover{
+                    color: black;
+                    background-color: grey;
+                    border: 1px solid black;
+                }
             }
         }
     }
