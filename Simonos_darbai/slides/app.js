@@ -1,54 +1,71 @@
 let slideIndex = 0;
+let sliderInterval; 
+
 const slides = document.querySelectorAll('.card');
+const totalSlides = slides.length;
 const dots = document.querySelectorAll('.dot');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 
-if(slides.length > 0) {
-    slides[slideIndex].classList.add('active');
-    dots[slideIndex].style.opacity = '1';
-    
-}
+showSlides(slideIndex);
+startSlider();
 
-function showSlides(slideIndex){
+
+
+function showSlides(index){
     slides.forEach((slide, i) =>{
         slide.classList.remove('active');
         dots[i].style.opacity = '0.3';
     });
-    slides[slideIndex].classList.add('active');
-    dots[slideIndex].style.opacity = '1';
+    slides[index].classList.add('active');
+    dots[index].style.opacity = '1';
    
 }
 
-let intervalID = setInterval(function(){
-    if(slideIndex >= slides.length){
-        slideIndex = 0;
+function autoSlide(){
+    slideIndex++;
+    if(slideIndex >= totalSlides){
+        slideIndex = 0
     }
     showSlides(slideIndex);
-    slideIndex++;
-}, 3000 );
+}
 
-dots.forEach((dot, i) =>{
-    dot.addEventListener('click', () =>{
-        slideIndex = i;
-        showSlides(slideIndex);
-    })
-})
+function startSlider() {
+    sliderInterval = setInterval(autoSlide, 3000)
+}
+
+function stopSlider(){
+    clearInterval(sliderInterval);
+}
+
+
+
 
 prev.addEventListener('click', () =>{
-    clearInterval(intervalID)
+    stopSlider()
     slideIndex--;
     if(slideIndex < 0){
-        slideIndex = slides.length - 1;
+        slideIndex = totalSlides - 1;
     }
-    showSlides(slideIndex)
+    showSlides(slideIndex);
+    startSlider();
 });
 
 next.addEventListener('click', () =>{
-    clearInterval(intervalID)
+    stopSlider()
     slideIndex++;
-    if(slideIndex >= slides.length){
+    if(slideIndex >= totalSlides){
         slideIndex = 0;
     }
-    showSlides(slideIndex)
-})
+    showSlides(slideIndex);
+    startSlider()
+});
+
+dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+        stopSlider();
+        slideIndex = i;
+        showSlides(slideIndex);
+        startSlider()
+    })
+});
