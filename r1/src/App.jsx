@@ -1,39 +1,43 @@
-
 import './app.css';
-import Bebras from './Bebras';
+import Auto from './Components/Auto';
+import Namas from './Components/Namas';
+import Parkas from './Components/Parkas';
+import RandomColor from './Components/RandomColor';
+import Volvo from './Components/Volvo';
 
-function Zebras() {
-  const tagas = 'h2'
+import rand from './Funkcijos/rand.js'
+ import randomColor from './Funkcijos/randomColor.js'
 
-  return (
-<>
-{
-tagas === 'h2' 
-? 
-<>
-<h2>Zebras</h2> 
-<span>zebras</span>
-</>
-: 
-<h3>Zebras</h3>
-}
-</>
-  )
-}
+import kazka from './Funkcijos/demoEx.js'
 
+import C, {A, B} from './Funkcijos/demoEx.js'
 
+import * as demo from './Funkcijos/demoEx.js'
 
 function App() {
+
+
+  
+   
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <Zebras/>
-      <h1>React v18</h1>
-      <Bebras/>
-      <Zebras/>
+    <div className="app">
+      <header className="app-header">
+        {kazka()} {A()} {B()}  {C()}
+        {demo.A()} {demo.B()} {demo.default()}
+        {/* <Namas numeris='1' spalva='yellow' kiekis = '5' rand={rand}/>
+        <Namas numeris= '2' spalva='green' kiekis = '8' rand={rand}/>
+        <Namas numeris ='3' spalva='red' kiekis = '1' rand={rand}/> */}
+        {/* <Parkas koks = {rand(1, 4)}/> */}
+        <Auto text ={<RandomColor ct='bla'/>}><h1>Opel</h1></Auto>
+        <Auto text ={<RandomColor ct='ku ku'/>}><h3>BMW</h3></Auto>
+        <Auto text ={<RandomColor/>}><Volvo/></Auto>
+
+ <h2 style={{
+    position: 'relative', left: rand(-300, 300) + 'px', color: randomColor(), letterSpacing: rand(5, 30) + 'px', fontSize: rand(10, 60) + 'px'}}>REACT</h2>
       </header>
     </div>
   );
 }
-
+ 
 export default App;
