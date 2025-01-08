@@ -1,18 +1,20 @@
 import './app.css';
-import './buttons.scss'
-import B043 from './Components/B043';
-// import ButtonsTest from './Components/ButtonsTest';
-import C043 from './Components/C043';
-import {useState} from 'react';
+import './buttons.scss';
+import Checkbox from './Components/044/Chechbox.jsx';
+import Mygtukai from './Components/044/Mygtukai';
+import Radio from './Components/044/Radio.jsx';
+import Select from './Components/044/Select.jsx';
+import Text from './Components/044/Text.jsx';
  
 function App() {
-    const [size, setSize] = useState(100);
   return (
     <div className="app">
       <header className="app-header">
-    {/* <ButtonsTest/> */}
-    <B043 setSize={setSize}/>
-    <C043 size={size}/>
+ <Mygtukai/>
+ <Text/>
+ <Select/>
+ <Checkbox/>
+ <Radio/>
       </header>
     </div>
   );
